@@ -1,26 +1,29 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
-    public GameObject finishedScreen;
+    public ItemSpawner itemSpawner;
+    public GameObject startScreen, finishedScreen;
     public Text faithText, collectedText, faithResult;
     public GameObject leftWall, rightWall;
     
     public float speed = 20f;
     public int maxCollected = 20;
 
-    private float faithCounter;
+    private int faithCounter;
     private float collectedCounter;
 
-    private bool isActive = true;
-    
+    private bool isActive = false;
+
     void Start()
     {
-        UpdateFaith(0);
+        faithCounter = FaithSystem.Instance.Faith;
+        UpdateFaith(faithCounter);
     }
 
     void Update()
@@ -79,8 +82,10 @@ public class PlayerScript : MonoBehaviour
     private void OnFinish()
     {
         isActive = false;
-        GameObject.Find("ItemSpawner").SetActive(false);
+        itemSpawner.gameObject.SetActive(false);
             
+        FaithSystem.Instance.AddFaith(faithCounter);
+        
         faithResult.text = faithCounter + " Faith";
         
         if (faithCounter < 0)
@@ -89,5 +94,12 @@ public class PlayerScript : MonoBehaviour
         }
         
         finishedScreen.SetActive(true);
+    }
+
+    public void onStartGame()
+    {
+        isActive = true;
+        startScreen.SetActive(false);
+        itemSpawner.gameObject.SetActive(true);
     }
 }
