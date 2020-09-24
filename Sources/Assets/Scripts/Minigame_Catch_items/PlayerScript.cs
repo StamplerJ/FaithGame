@@ -96,10 +96,15 @@ public class PlayerScript : MonoBehaviour
         finishedScreen.SetActive(true);
     }
 
-    public void onStartGame()
+    public void OnStartGame()
     {
         isActive = true;
         startScreen.SetActive(false);
         itemSpawner.gameObject.SetActive(true);
+    }
+
+    public void OnGoBack()
+    {
+        SceneChanger.Instance.LoadLastScene();
     }
 }

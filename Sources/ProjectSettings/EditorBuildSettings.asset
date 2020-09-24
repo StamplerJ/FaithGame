@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigame_Catch_Items.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/TestScene.unity
+    guid: 92311404490ec5c40afe65c8abc42345
   m_configObjects: {}

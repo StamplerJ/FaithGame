@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FaithSystem : Singleton<FaithSystem>
+public class FaithSystem : MonoBehaviour
 {
     private int faith;
 
@@ -17,4 +17,18 @@ public class FaithSystem : Singleton<FaithSystem>
     }
     
     public int Faith => faith;
+    
+    private static FaithSystem _instance;
+
+    public static FaithSystem Instance { get { return _instance; } }
+    
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        } else {
+            _instance = this;
+        }
+    }
 }
