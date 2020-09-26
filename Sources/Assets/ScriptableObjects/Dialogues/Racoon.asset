@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478c7a5044c20154b9358adc634c8269, type: 3}
+  m_Name: Racoon
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: 38c5745cc8021814db3a604a49a0a9d3, type: 2}
+  messages:
+  - isPlayer: 1
+    text: Wait, is this a racoon?
+    responses:
+    - next: 1
+      reply: Next
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 1
+    text: Hey, what are you doing there?
+    responses:
+    - next: 2
+      reply: Next
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 0
+    text: Oh hey, I'm just tidying up my room. Can you help me?
+    responses:
+    - next: 3
+      reply: Sure, I'll help you!
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+    - next: -1
+      reply: Eww, no! That's disgusting!
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 0
+    text: Thank you soo much!
+    responses:
+    - next: -1
+      reply: Start Game
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 11400000, guid: 8dc94e87f85873847b80a7cd2ed9092a, type: 2}
+    - next: -1
+      reply: Cancel
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}

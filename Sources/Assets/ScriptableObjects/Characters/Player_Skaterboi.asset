@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 251645cfc9ce7c541bf407006e6301da, type: 3}
+  m_Name: Player_Skaterboi
+  m_EditorClassIdentifier: 
+  name: Skaterboi
+  portrait: {fileID: 242945838433551811, guid: fbc368486f36a6144a64d778a8704df0, type: 3}
+  sprite: {fileID: 242945838433551811, guid: fbc368486f36a6144a64d778a8704df0, type: 3}
