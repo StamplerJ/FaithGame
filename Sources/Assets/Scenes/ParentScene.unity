@@ -213,6 +213,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2242856005367111028, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -298
+      objectReference: {fileID: 0}
     - target: {fileID: 2648067429650049501, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 449.6804
@@ -260,6 +264,26 @@ PrefabInstance:
     - target: {fileID: 2648067429650049502, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
       propertyPath: m_Name
       value: DialogManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506285187975252613, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
+      propertyPath: m_Text
+      value: ssss
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506285187975252613, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506285187975252613, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640241818843945847, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6718792827278369971, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
