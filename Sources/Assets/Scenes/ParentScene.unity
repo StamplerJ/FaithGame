@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &252607455 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4506285187975252613, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
-  m_PrefabInstance: {fileID: 1608427592}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &724478923
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +206,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1608427592
+--- !u!1001 &855419605
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -272,14 +261,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogManager
       objectReference: {fileID: 0}
-    - target: {fileID: 3394970126459197705, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
-      propertyPath: name
-      value: 
-      objectReference: {fileID: 252607455}
-    - target: {fileID: 3394970126459197705, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
-      propertyPath: text
-      value: 
-      objectReference: {fileID: 1880700583}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
 --- !u!1001 &1668097375
@@ -420,14 +401,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f106ccdd9e3aa9f4e97f50085a99df80, type: 3}
---- !u!114 &1880700583 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 767017025148048584, guid: 2bf2914fda0e65d4b8c345efdd6f10d5, type: 3}
-  m_PrefabInstance: {fileID: 1608427592}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

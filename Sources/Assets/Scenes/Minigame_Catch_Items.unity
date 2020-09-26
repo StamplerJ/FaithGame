@@ -1904,7 +1904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1020108362598195460, guid: ceac40f8eb30e5c4b86182943a1dcc62, type: 3}
       propertyPath: maxCollected
-      value: 20
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1020108362598195460, guid: ceac40f8eb30e5c4b86182943a1dcc62, type: 3}
       propertyPath: finishedScreen

@@ -7,6 +7,6 @@ public class SceneTest : MonoBehaviour
 {
     public void OnCatchItems()
     {
-        SceneChanger.Instance.LoadScene(MapConstants.CATCH_ITEMS);
+        SceneChanger.Instance.LoadScene("Minigame_Catch_Items");
     }
 }
