@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1020108362598195458}
   - component: {fileID: 1020108362598195460}
   - component: {fileID: 1020108362598195463}
-  - component: {fileID: 7929029303768607311}
+  - component: {fileID: 6901158399034860684}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -74,12 +74,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1565831748363409520, guid: fbc368486f36a6144a64d778a8704df0, type: 3}
+  m_Sprite: {fileID: -9152932644740421140, guid: 30196bbe665348b439c058023c4407b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.28, y: 0.45}
+  m_Size: {x: 0.9277474, y: 0.9153846}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -97,7 +97,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67f0eff631e766469128b0defbf7f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemSpawner: {fileID: 0}
+  startScreen: {fileID: 0}
+  finishedScreen: {fileID: 0}
+  faithText: {fileID: 0}
+  collectedText: {fileID: 0}
+  faithResult: {fileID: 0}
+  leftWall: {fileID: 0}
+  rightWall: {fileID: 0}
   speed: 10
+  maxCollected: 20
 --- !u!61 &1020108362598195463
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -111,20 +120,20 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0022846758, y: 0.11162095}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.4375, y: 0.703125}
-    newSize: {x: 0.28, y: 0.45}
+    oldSize: {x: 0.9277474, y: 0.9153846}
+    newSize: {x: 0.9277474, y: 0.9153846}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.43444532, y: 0.2267581}
+  m_Size: {x: 0.9277474, y: 0.9153846}
   m_EdgeRadius: 0
---- !u!50 &7929029303768607311
+--- !u!50 &6901158399034860684
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -144,4 +153,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 4

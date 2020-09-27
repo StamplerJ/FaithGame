@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Player_Skaterboi
   m_EditorClassIdentifier: 
   name: Skaterboi
-  portrait: {fileID: 242945838433551811, guid: fbc368486f36a6144a64d778a8704df0, type: 3}
-  sprite: {fileID: 242945838433551811, guid: fbc368486f36a6144a64d778a8704df0, type: 3}
+  portrait: {fileID: 21300000, guid: 8ff878cf79feb2640b87602f45cd950b, type: 3}
+  sprite: {fileID: 21300000, guid: 8ff878cf79feb2640b87602f45cd950b, type: 3}

@@ -40,7 +40,9 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool(IsOpen, true);
 
         this.currentDialogue = dialog;
-
+        playerImage.sprite = playerCharacter.portrait;
+        npcImage.sprite = dialog.character.portrait;
+        
         DisplayNextMessage(0);
     }
 
