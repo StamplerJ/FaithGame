@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478c7a5044c20154b9358adc634c8269, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: 7316ba6ed82a570439615811660d601f, type: 2}
+  messages:
+  - isPlayer: 0
+    text: Good evening everyone, my name is Prudence Craven and wecome to *** Daily
+      News.
+    responses:
+    - next: 1
+      reply: Next
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 0
+    text: Today we are going to stream an announcement from our partners at BIBLE
+      24/7 TV, who apparently have been contacted by none other than Jesus himself
+      and are going live any minute now.
+    responses:
+    - next: 2
+      reply: Next
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 0
+    text: We are just as surprised and curious as our audience to hear what the reason
+      of this unusual contacting might be..
+    responses:
+    - next: 3
+      reply: Next
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 0
+    text: Hi this is Jesus. Unfortunately we have to close the earth. It will end
+      in 7 days.
+    responses:
+    - next: 4
+      reply: Next
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 0
+    text: Good luck gathering enough faith!
+    responses:
+    - next: -1
+      reply: Close
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 11400000, guid: 3227fd30b966f894283747526daba052, type: 2}

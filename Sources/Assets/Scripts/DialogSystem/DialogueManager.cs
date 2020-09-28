@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -19,6 +20,8 @@ public class DialogueManager : MonoBehaviour
     
     void Awake()
     {
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
+        
         if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);
@@ -64,6 +67,8 @@ public class DialogueManager : MonoBehaviour
         // Show portrait image for player or npc
         playerImage.enabled = message.isPlayer;
         npcImage.enabled = !message.isPlayer;
+        
+        
 
         characterName.text = message.isPlayer ? playerCharacter.name : currentDialogue.character.name;
         

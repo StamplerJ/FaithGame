@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478c7a5044c20154b9358adc634c8269, type: 3}
+  m_Name: Blocker_standing
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: 0f09467f6192ed14b99ffe347473e04a, type: 2}
+  messages:
+  - isPlayer: 1
+    text: Jesus sucks?! That's unfaithful.
+    responses:
+    - next: -1
+      reply: Push it over
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 11400000, guid: 7857cc01550065b48a57e37b47a60d55, type: 2}
+    - next: -1
+      reply: Leave it
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}

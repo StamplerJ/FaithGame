@@ -6,25 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Minigames/Minigame_Catch_Items.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/TestScene.unity
-    guid: 92311404490ec5c40afe65c8abc42345
-  - enabled: 1
     path: Assets/Scenes/ParentScene.unity
     guid: 6705c6f57b9e5a34fa4983117196cc37
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Menus/MainMenu.unity
     guid: 77ab5a03209bfde45a10364ce2cac767
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Minigame_Catch_Items.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Minigames/Minigame_Sliding_Puzzle.unity
     guid: a5ce4c6386a7a9e4cb263f96fddab225
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
+    path: Assets/Scenes/Menus/Credits.unity
     guid: 47b8e7f2419624d45a9cc51e870766d0
   - enabled: 1
-    path: Assets/Scenes/Character_Selection.unity
+    path: Assets/Scenes/Menus/Character_Selection.unity
     guid: 33975ef12501ccc46a3c6e7d612da3ad
   - enabled: 1
     path: Assets/Scenes/Locations/Ghetto.unity
@@ -32,4 +29,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Locations/Park.unity
     guid: 6020e29f5d7e14d479e734f94944f624
+  - enabled: 1
+    path: Assets/Scenes/Locations/Vorstadt_blocker.unity
+    guid: 489c9f16023c5dc4e9e55293130e06f9
+  - enabled: 1
+    path: Assets/Scenes/Locations/Tierheim.unity
+    guid: 958d8fe75c040f749955c0bdc3fe2158
+  - enabled: 1
+    path: Assets/Scenes/Locations/Vorstadt_no_blocker.unity
+    guid: 0d5753b84d1fc284a89fa82a3c467f5b
+  - enabled: 1
+    path: Assets/Scenes/Menus/Endscreen.unity
+    guid: 50ff11eaac800d549aa508ce50a06672
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: a4b8a2946d924ab4b89476434ed10aa8
   m_configObjects: {}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Racoon
   m_EditorClassIdentifier: 
   name: Racoon
-  portrait: {fileID: 1043442747385290943, guid: fbc368486f36a6144a64d778a8704df0, type: 3}
-  sprite: {fileID: 1043442747385290943, guid: fbc368486f36a6144a64d778a8704df0, type: 3}
+  portrait: {fileID: 21300000, guid: d8927f658e34ca740a11b1cd8d1bba24, type: 3}
+  sprite: {fileID: 21300000, guid: d8927f658e34ca740a11b1cd8d1bba24, type: 3}

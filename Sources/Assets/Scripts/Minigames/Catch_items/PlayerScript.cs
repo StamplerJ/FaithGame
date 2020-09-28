@@ -9,7 +9,7 @@ public class PlayerScript : MonoBehaviour
 {
     public ItemSpawner itemSpawner;
     public GameObject startScreen, finishedScreen;
-    public Text faithText, collectedText, faithResult;
+    public Text faithText, collectedText;
     public GameObject leftWall, rightWall;
     
     public float speed = 20f;
@@ -84,14 +84,13 @@ public class PlayerScript : MonoBehaviour
         isActive = false;
         itemSpawner.gameObject.SetActive(false);
             
-        FaithSystem.Instance.AddFaith(faithCounter);
+        // FaithSystem.Instance.AddFaith(faithCounter);
         
-        faithResult.text = faithCounter + " Faith";
-        
-        if (faithCounter < 0)
-        {
-            faithResult.color = Color.red;
-        }
+        // faithResult.text = faithCounter + " Faith";
+
+        FaithSystem.Instance.faithCatched = faithCounter;
+
+        ProgressTracker.RacoonMinigameDone = true;
         
         finishedScreen.SetActive(true);
     }
@@ -101,10 +100,14 @@ public class PlayerScript : MonoBehaviour
         isActive = true;
         startScreen.SetActive(false);
         itemSpawner.gameObject.SetActive(true);
+        
+        MapManager.Instance.DisableMap();
     }
 
     public void OnGoBack()
     {
         SceneChanger.Instance.LoadLastScene();
+        
+        MapManager.Instance.EnableMap();
     }
 }

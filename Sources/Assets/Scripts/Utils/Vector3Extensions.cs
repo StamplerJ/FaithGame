@@ -34,12 +34,12 @@ public static class Vector3Extensions
         return snapped - offset;
     }
 
-    public static Vector3 Clamp(this Vector3 vector3, float xRange, float yRange, float zRange)
+    public static Vector3 Clamp(this Vector3 vector3, float left, float right, float top, float bottom)
     {
         return new Vector3(
-            Mathf.Clamp(vector3.x, -xRange, xRange),
-            Mathf.Clamp(vector3.y, -yRange, yRange),
-            Mathf.Clamp(vector3.z, -zRange, zRange)
+            Mathf.Clamp(vector3.x, left, right),
+            Mathf.Clamp(vector3.y, bottom, top),
+            0f
             );
     }
 }

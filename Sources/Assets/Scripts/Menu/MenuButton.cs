@@ -27,7 +27,8 @@ public class MenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        image.material = outlineMaterial;
+        if (outlineMaterial != null)
+            image.material = outlineMaterial;
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -38,11 +39,21 @@ public class MenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public void OnSelectCharacter()
     {
         MapManager.Instance.EnableMap();
+        ProgressTracker.Start = true;
 
-        if(destination != null)
-            SceneChanger.Instance.LoadScene(destination.name);
+        OnButtonClick();
     }
 
+    public void OnPlayAgain()
+    {
+        MapManager.Instance.Reset();
+        FaithSystem.Instance.Faith = 0;
+        
+        ProgressTracker.Instance.ResetProgress();
+
+        OnButtonClick();
+    }
+    
     public void OnExitClick()
     {
         Application.Quit();
@@ -50,6 +61,9 @@ public class MenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     private void OnValidate()
     {
-        GetComponentInChildren<Text>().text = this.name;
+        Text text = GetComponentInChildren<Text>();
+        
+        if(text != null)
+            text.text = this.name;
     }
 }

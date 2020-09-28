@@ -1,10 +1,9 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
+    public Dialogue conversationEndedDialogue;
 
     [HideInInspector]
     public Response response;
@@ -24,16 +23,25 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if(MapManager.Instance.isShown)
+            return;
+        
         TriggerDialogue();
     }
 
     private void OnMouseEnter()
     {
+        if(MapManager.Instance.isShown)
+            return;
+        
         spriteRenderer.sharedMaterial = outlineMaterial;
     }
 
     private void OnMouseExit()
     {
+        if(MapManager.Instance.isShown)
+            return;
+        
         spriteRenderer.sharedMaterial = standardMaterial;
     }
 
@@ -46,7 +54,7 @@ public class DialogueTrigger : MonoBehaviour
     public void TriggerResponse()
     {
         DialogueManager.Instance.DisplayNextMessage(response.next);
-        
+
         if (response.triggerMap != null)
         {
             SceneChanger.Instance.LoadScene(response.triggerMap.name);

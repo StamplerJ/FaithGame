@@ -101,7 +101,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Alpha: 0
-    - OutlineThickness: 5
+    - OutlineThickness: 10
     - PixelSnap: 0
     - Vector1_1BF768E0: 5
     - Vector1_23FCCB6F: 0
