@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251645cfc9ce7c541bf407006e6301da, type: 3}
   m_Name: Player_Skaterboi
   m_EditorClassIdentifier: 
-  name: Skaterboi
-  portrait: {fileID: 242945838433551811, guid: fbc368486f36a6144a64d778a8704df0, type: 3}
-  sprite: {fileID: 242945838433551811, guid: fbc368486f36a6144a64d778a8704df0, type: 3}
+  name: Miles
+  portrait: {fileID: 21300000, guid: 8ff878cf79feb2640b87602f45cd950b, type: 3}
+  sprite: {fileID: 21300000, guid: 8ff878cf79feb2640b87602f45cd950b, type: 3}

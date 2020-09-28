@@ -15,13 +15,8 @@ public class Turntable : MonoBehaviour
     bool lerpBackwards;
     public int state;
     public GameObject image;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
+    public Button selectButton;
+    
     void Update()
     {
         RotateTurntable();
@@ -79,7 +74,6 @@ public class Turntable : MonoBehaviour
             {
                 state = 0;
             }
-            Debug.Log(state);
         }
     }
 
@@ -102,8 +96,6 @@ public class Turntable : MonoBehaviour
                 state = 2;
             }
         }
-
-        Debug.Log(state);
     }
 
     private void VisibilityTextbox(GameObject image)
@@ -111,6 +103,8 @@ public class Turntable : MonoBehaviour
         if (state == 0)
         {
             image.SetActive(true);
+
+            selectButton.interactable = name.Equals("Miles");
         }
         else
         {

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478c7a5044c20154b9358adc634c8269, type: 3}
+  m_Name: PetShopWoman
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: 7316ba6ed82a570439615811660d601f, type: 2}
+  messages:
+  - isPlayer: 0
+    text: Welcome to our animal shelter! You want to get yourself a new best friend?
+      I mean.. for the next 7 days, at least.
+    responses:
+    - next: 1
+      reply: Next
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 1
+    text: Wow, there's a lot of animals in here. Do you take care of them all by
+      yourself?
+    responses:
+    - next: 2
+      reply: Next
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 0
+    text: Yep. Now more than ever. The others left immediately when they heard from
+      Jesus. But I just can't leave my little angels alone...
+    responses:
+    - next: -1
+      reply: Yeah, you're right. They would be absolutely helpless.
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+    - next: 3
+      reply: I might just have an idea for your angels...
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 0
+    text: What do you mean?
+    responses:
+    - next: 4
+      reply: Next
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 1
+    text: We could free them! Then they can at least enjoy the rest of their time
+      outside!
+    responses:
+    - next: 5
+      reply: Next
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 0
+    text: That's simply crazy.. but.. yeah. Why the hell not? They deserve some fun
+      and freedom! So are we gonna open the cages now?
+    responses:
+    - next: -1
+      reply: Let's do it!
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 11400000, guid: 5b2d87de88ecc4b4bb80178f3e6d2f6d, type: 2}
+    - next: -1
+      reply: Just gimme a second..
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}

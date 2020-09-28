@@ -30,6 +30,10 @@ public class SceneChanger : MonoBehaviour
                 currentScene = SceneManager.GetSceneAt(i).name;
             }
         }
+
+        if (currentScene == null)
+            currentScene = "MainMenu";
+        
         lastScenes = new Stack<string>();
     }
 
@@ -51,6 +55,9 @@ public class SceneChanger : MonoBehaviour
         SceneManager.UnloadSceneAsync(currentScene);
         SceneManager.LoadScene(newScene, LoadSceneMode.Additive);
         currentScene = newScene;
+        
+        // Perspective fix for character selection
+        Camera.main.orthographic = !newScene.Equals("Character_Selection");
 
         transition.SetTrigger("FadeOut");
     }

@@ -15,38 +15,65 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: 38c5745cc8021814db3a604a49a0a9d3, type: 2}
   messages:
   - isPlayer: 1
-    text: Wait, is this a racoon?
+    text: Wait, what's that? Is that a raccoon? Hey, you filthy little... !
     responses:
     - next: 1
       reply: Next
+      endsConversation: 0
       requiredCharacter: {fileID: 0}
       triggerMap: {fileID: 0}
-  - isPlayer: 1
-    text: Hey, what are you doing there?
+  - isPlayer: 0
+    text: '*hisses angrily*'
     responses:
     - next: 2
       reply: Next
+      endsConversation: 0
       requiredCharacter: {fileID: 0}
       triggerMap: {fileID: 0}
-  - isPlayer: 0
-    text: Oh hey, I'm just tidying up my room. Can you help me?
+  - isPlayer: 1
+    text: Hey, calm down man! Wait, is that a coke? Is there more where that came
+      from?
     responses:
     - next: 3
-      reply: Sure, I'll help you!
-      requiredCharacter: {fileID: 0}
-      triggerMap: {fileID: 0}
-    - next: -1
-      reply: Eww, no! That's disgusting!
+      reply: Next
+      endsConversation: 0
       requiredCharacter: {fileID: 0}
       triggerMap: {fileID: 0}
   - isPlayer: 0
-    text: Thank you soo much!
+    text: '*nods*'
+    responses:
+    - next: 4
+      reply: Ask for help
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+    - next: 5
+      reply: Leave it alone
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 1
+    text: Could you help me gather some goods out of the trash container?
+    responses:
+    - next: 6
+      reply: Next
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 1
+    text: Urgh, disgusting. Just go back right in there, so I don't have to see your
+      nasty face!
+    responses:
+    - next: -1
+      reply: Close
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 0
+    text: '*nods*'
     responses:
     - next: -1
       reply: Start Game
+      endsConversation: 1
       requiredCharacter: {fileID: 0}
       triggerMap: {fileID: 11400000, guid: 8dc94e87f85873847b80a7cd2ed9092a, type: 2}
-    - next: -1
-      reply: Cancel
-      requiredCharacter: {fileID: 0}
-      triggerMap: {fileID: 0}

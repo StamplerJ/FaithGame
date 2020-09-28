@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478c7a5044c20154b9358adc634c8269, type: 3}
+  m_Name: Penner_before
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: 1c8df2dc2838aca4b8b1ca0e859a3cb1, type: 2}
+  messages:
+  - isPlayer: 0
+    text: The fuck man! Why the heck you're disturbing us? It's the MIDDLE OF DAY,
+      we wanna sleep!
+    responses:
+    - next: 1
+      reply: Next
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
+  - isPlayer: 1
+    text: Uhm, oh, sorry for bothering!
+    responses:
+    - next: -1
+      reply: Close
+      endsConversation: 0
+      requiredCharacter: {fileID: 0}
+      triggerMap: {fileID: 0}
