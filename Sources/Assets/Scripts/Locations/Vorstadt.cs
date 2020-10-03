@@ -1,23 +1,35 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 public class Vorstadt : MonoBehaviour
 {
     public bool isBlockerFlat;
     
-    public Dialogue[] dialogues;
+    public Dialogue dialogueBlockerStanding, dialogBlockerFlat;
 
     public GameObject blocker;
     public Sprite blockerStanding, blockerFlat;
 
     void Start()
     {
-        ProgressTracker.SuburbBlockRemoved = isBlockerFlat;
+        isBlockerFlat = ProgressTracker.SuburbBlockRemoved;
         
         blocker.GetComponentInChildren<SpriteRenderer>().sprite =
             (ProgressTracker.SuburbBlockRemoved ? blockerFlat : blockerStanding);
+
+        blocker.GetComponent<DialogueTrigger>().dialogue =
+            (ProgressTracker.SuburbBlockRemoved ? dialogBlockerFlat : dialogueBlockerStanding);
+    }
+
+    private void OnMouseDown()
+    {
+        ToggleBlocker();
+    }
+
+    public void ToggleBlocker()
+    {
+        isBlockerFlat = !isBlockerFlat;
+
+        ProgressTracker.SuburbBlockRemoved = isBlockerFlat;
     }
 }

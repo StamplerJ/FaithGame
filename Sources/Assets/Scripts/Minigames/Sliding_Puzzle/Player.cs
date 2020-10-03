@@ -39,16 +39,16 @@ public class Player : MonoBehaviour
         if (ProgressTracker.SuburbBlockRemoved)
         {
             finishText.text = "Oh no, because of the missing barrier the animals were killed on the street....\n" +
-                         "You loose 1000 Faith";
+                         "You loose 500 Faith";
             
-            FaithSystem.Instance.RemoveFaith(1000);
+            FaithSystem.Instance.RemoveFaith(500);
         }
         else
         {
             finishText.text = "You freed the animals!\n" +
-                              "You earn 1000 Faith";
+                              "You earn 500 Faith";
             
-            FaithSystem.Instance.AddFaith(1000);
+            FaithSystem.Instance.AddFaith(500);
         }
     }
 

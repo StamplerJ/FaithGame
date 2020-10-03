@@ -67,8 +67,6 @@ public class DialogueManager : MonoBehaviour
         // Show portrait image for player or npc
         playerImage.enabled = message.isPlayer;
         npcImage.enabled = !message.isPlayer;
-        
-        
 
         characterName.text = message.isPlayer ? playerCharacter.name : currentDialogue.character.name;
         

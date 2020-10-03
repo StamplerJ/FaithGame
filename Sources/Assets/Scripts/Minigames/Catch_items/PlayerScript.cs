@@ -22,7 +22,7 @@ public class PlayerScript : MonoBehaviour
 
     void Start()
     {
-        faithCounter = FaithSystem.Instance.Faith;
+        faithCounter = 0;
         UpdateFaith(faithCounter);
     }
 
@@ -35,6 +35,31 @@ public class PlayerScript : MonoBehaviour
         transform.Translate(new Vector3(direction * speed * Time.deltaTime, 0f, 0f));
 
         var position = transform.position;
+        if (transform.position.x > rightWall.transform.position.x - rightWall.transform.localScale.x / 2f)
+        {
+            position = new Vector3(rightWall.transform.position.x - rightWall.transform.localScale.x / 2f,
+                position.y, position.z);
+            transform.position = position;
+        }
+        else if (transform.position.x < leftWall.transform.position.x + leftWall.transform.localScale.x / 2f)
+        {
+            position = new Vector3(leftWall.transform.position.x + leftWall.transform.localScale.x / 2f, position.y,
+                position.z);
+            transform.position = position;
+        }
+    }
+
+    private void OnMouseDrag()
+    {
+        if (!isActive) 
+            return;
+        
+        var position = transform.position;
+        
+        Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f);
+        Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint);
+        transform.position = new Vector3(curPosition.x, position.y, position.z);
+        
         if (transform.position.x > rightWall.transform.position.x - rightWall.transform.localScale.x / 2f)
         {
             position = new Vector3(rightWall.transform.position.x - rightWall.transform.localScale.x / 2f,

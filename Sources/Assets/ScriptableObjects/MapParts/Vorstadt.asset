@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee4444f3a9397594fa007de5fdddc586, type: 3}
-  m_Name: Vorstadt_blocker
+  m_Name: Vorstadt
   m_EditorClassIdentifier: 
-  name: Vorstadt_blocker
+  name: Vorstadt
   sprite: {fileID: 21300000, guid: 1d2c15552b5dfbd49927ec6c196f500f, type: 3}
