@@ -16,7 +16,13 @@ public class Turntable : MonoBehaviour
     public int state;
     public GameObject image;
     public Button selectButton;
-    
+    private Text selectText;
+
+    private void Awake()
+    {
+        selectText = selectButton.GetComponentInChildren<Text>();
+    }
+
     void Update()
     {
         RotateTurntable();
@@ -104,7 +110,16 @@ public class Turntable : MonoBehaviour
         {
             image.SetActive(true);
 
-            selectButton.interactable = name.Equals("Miles");
+            if (name.Equals("Miles"))
+            {
+                selectButton.interactable = true;
+                selectText.enabled = false;
+            }
+            else
+            {
+                selectButton.interactable = false;
+                selectText.enabled = true;
+            }
         }
         else
         {

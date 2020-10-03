@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee4444f3a9397594fa007de5fdddc586, type: 3}
-  m_Name: Vorstadt_no_blocker
+  m_Script: {fileID: 11500000, guid: 251645cfc9ce7c541bf407006e6301da, type: 3}
+  m_Name: NewsAnchor
   m_EditorClassIdentifier: 
-  name: Vorstadt_no_blocker
-  sprite: {fileID: 21300000, guid: 1d2c15552b5dfbd49927ec6c196f500f, type: 3}
+  name: Prudence Craven
+  portrait: {fileID: 21300000, guid: 21f71595204eeff449f5016a44a430d1, type: 3}
+  sprite: {fileID: 21300000, guid: 21f71595204eeff449f5016a44a430d1, type: 3}

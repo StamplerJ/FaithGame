@@ -198,10 +198,59 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134221977}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -930.5288, y: -272.49445, z: 129.03687}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+  m_Father: {fileID: 657526465}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &657526463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 657526465}
+  - component: {fileID: 657526464}
+  m_Layer: 0
+  m_Name: Tierheim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &657526464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657526463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48b8662c7dd91c48bbaf3c4565b554b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  petShopWoman: {fileID: 4841971818982929885}
+  dialogues:
+  - {fileID: 11400000, guid: b6d445990d2360d4e9716ad7e6f8a8dc, type: 2}
+  - {fileID: 11400000, guid: 1aa60d6ac8252ca40a77965e7e01b554, type: 2}
+--- !u!4 &657526465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657526463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 930.5288, y: 272.49445, z: -129.03687}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 134221979}
+  - {fileID: 4841971818982929884}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -210,31 +259,31 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 657526465}
     m_Modifications:
     - target: {fileID: 4841971819216884188, guid: 8d6e509273c254742af304b7a5a7fee9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.785
+      value: -936.3138
       objectReference: {fileID: 0}
     - target: {fileID: 4841971819216884188, guid: 8d6e509273c254742af304b7a5a7fee9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.752
+      value: -273.24646
       objectReference: {fileID: 0}
     - target: {fileID: 4841971819216884188, guid: 8d6e509273c254742af304b7a5a7fee9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.610175
+      value: 126.42669
       objectReference: {fileID: 0}
     - target: {fileID: 4841971819216884188, guid: 8d6e509273c254742af304b7a5a7fee9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4841971819216884188, guid: 8d6e509273c254742af304b7a5a7fee9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4841971819216884188, guid: 8d6e509273c254742af304b7a5a7fee9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4841971819216884188, guid: 8d6e509273c254742af304b7a5a7fee9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -440,6 +489,10 @@ PrefabInstance:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 11400000, guid: b6d445990d2360d4e9716ad7e6f8a8dc, type: 2}
+    - target: {fileID: 4841971819216884190, guid: 8d6e509273c254742af304b7a5a7fee9, type: 3}
+      propertyPath: conversationEndedDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: d9dfc4ad97d22104798a84451c5b0090, type: 2}
     - target: {fileID: 4841971819216884191, guid: 8d6e509273c254742af304b7a5a7fee9, type: 3}
       propertyPath: m_Name
       value: Interactable
@@ -462,3 +515,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d6e509273c254742af304b7a5a7fee9, type: 3}
+--- !u!4 &4841971818982929884 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4841971819216884188, guid: 8d6e509273c254742af304b7a5a7fee9, type: 3}
+  m_PrefabInstance: {fileID: 4841971818982929883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4841971818982929885 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4841971819216884191, guid: 8d6e509273c254742af304b7a5a7fee9, type: 3}
+  m_PrefabInstance: {fileID: 4841971818982929883}
+  m_PrefabAsset: {fileID: 0}

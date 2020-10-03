@@ -2,12 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Link : MonoBehaviour
+public class Link : MonoBehaviour, IPointerDownHandler
 {
     public string url;
-    
-    private void OnMouseDown()
+
+    public void OnPointerDown(PointerEventData eventData)
     {
         Application.OpenURL(url);
     }

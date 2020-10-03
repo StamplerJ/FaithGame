@@ -30,7 +30,7 @@ public class SceneChanger : MonoBehaviour
                 currentScene = SceneManager.GetSceneAt(i).name;
             }
         }
-
+        
         if (currentScene == null)
             currentScene = "MainMenu";
         

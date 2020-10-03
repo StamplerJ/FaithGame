@@ -10,20 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 478c7a5044c20154b9358adc634c8269, type: 3}
-  m_Name: Blocker_standing
+  m_Name: PetShopWoman_AfterGame
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 0f09467f6192ed14b99ffe347473e04a, type: 2}
+  character: {fileID: 11400000, guid: 7316ba6ed82a570439615811660d601f, type: 2}
   messages:
-  - isPlayer: 1
-    text: Jesus sucks?! That's unfaithful.
+  - isPlayer: 0
+    text: Thank you so much for your help! I hope the animals are fine out there.
     responses:
     - next: -1
-      reply: Push it over
-      endsConversation: 0
-      requiredCharacter: {fileID: 0}
-      triggerMap: {fileID: 11400000, guid: 0f38e9575db2cf04e968830ebed22fd0, type: 2}
-    - next: -1
-      reply: Leave it
+      reply: Close
       endsConversation: 0
       requiredCharacter: {fileID: 0}
       triggerMap: {fileID: 0}

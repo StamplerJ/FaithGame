@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -54,6 +55,23 @@ public class DialogueTrigger : MonoBehaviour
     public void TriggerResponse()
     {
         DialogueManager.Instance.DisplayNextMessage(response.next);
+
+        // Very bad hack, never do this in real life
+        if(SceneManager.GetSceneAt(1) != null && SceneManager.GetSceneAt(1).name.Equals("Vorstadt"))
+            FaithSystem.Instance.AddFaith((ProgressTracker.SuburbBlockRemoved ? 50 : -50));
+        
+        // Very bad, too!
+        if (SceneManager.GetSceneAt(1) != null && SceneManager.GetSceneAt(1).name.Equals("Park"))
+        {
+            if (ProgressTracker.RacoonMinigameDone)
+            {
+                if (!ProgressTracker.HomelessDelivered)
+                {
+                    FaithSystem.Instance.AddFaith(FaithSystem.Instance.faithCatched);
+                    ProgressTracker.HomelessDelivered = true;
+                }
+            }
+        }
 
         if (response.triggerMap != null)
         {

@@ -1109,7 +1109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1020108362598195463, guid: ceac40f8eb30e5c4b86182943a1dcc62, type: 3}
       propertyPath: m_Offset.y
-      value: 0.39805537
+      value: -0.065763116
       objectReference: {fileID: 0}
     - target: {fileID: 1020108362598195463, guid: ceac40f8eb30e5c4b86182943a1dcc62, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -1129,15 +1129,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1020108362598195463, guid: ceac40f8eb30e5c4b86182943a1dcc62, type: 3}
       propertyPath: m_Size.y
-      value: 0.11927378
+      value: 1.0753438
       objectReference: {fileID: 0}
     - target: {fileID: 1020108362598195463, guid: ceac40f8eb30e5c4b86182943a1dcc62, type: 3}
       propertyPath: m_Offset.x
-      value: -0.007057756
+      value: -0.007057816
       objectReference: {fileID: 0}
     - target: {fileID: 1020108362598195463, guid: ceac40f8eb30e5c4b86182943a1dcc62, type: 3}
       propertyPath: m_Size.x
-      value: 1.0886633
+      value: 1.0246885
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ceac40f8eb30e5c4b86182943a1dcc62, type: 3}
@@ -1380,7 +1380,7 @@ MonoBehaviour:
     good parts!
 
 
-    Use A & D or Arrow keys'
+    Use your mouse or the arrow keys'
 --- !u!222 &1629366710
 CanvasRenderer:
   m_ObjectHideFlags: 0

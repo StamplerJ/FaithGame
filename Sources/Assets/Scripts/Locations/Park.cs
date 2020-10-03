@@ -14,11 +14,6 @@ public class Park : MonoBehaviour
         if (ProgressTracker.RacoonMinigameDone)
         {
             penner.GetComponent<DialogueTrigger>().dialogue = dialogues[1];
-            if (!ProgressTracker.HomelessDelivered)
-            {
-                FaithSystem.Instance.AddFaith(FaithSystem.Instance.faithCatched);
-                ProgressTracker.HomelessDelivered = true;
-            }
         }
         else
         {
